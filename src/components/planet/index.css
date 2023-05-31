@@ -1,0 +1,16 @@
+.planet {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.count {
+    color: #ec710f;
+    margin-left: 5px
+}
