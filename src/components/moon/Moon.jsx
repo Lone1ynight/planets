@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './index.css';
 
 export const Moon = ({moon, onClickMoon, selectedMoons}) => {

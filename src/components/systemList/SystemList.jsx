@@ -1,10 +1,9 @@
-import React, {useEffect, useState} from "react";
-import {System} from "../system/System";
-import './index.css'
-import {moons, planets} from "../../constants";
+import React, {useEffect, useState} from 'react';
+import {System} from '../system/System';
+import './index.css';
+import {moons, planets} from '../../constants';
 
-
-export const Systems = () => {
+export const SystemList = () => {
     const [systems, setSystems] = useState([]);
 
     useEffect(() => {
@@ -19,7 +18,7 @@ export const Systems = () => {
     }, [])
 
     return (
-        <div className='systems'>
+        <div className='systemList'>
             {systems.map(system =>
                 <System system={system} key={system.planet.id}/>
             )}

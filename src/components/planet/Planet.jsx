@@ -1,6 +1,7 @@
-import React, {useEffect, useRef, useState} from "react";
-import './index.css'
-import {Circle} from "../circle/Circle";
+import React, {useRef} from 'react';
+import './index.css';
+import {Circle} from '../circle/Circle';
+
 export const Planet = ({title, selectedMoons}) => {
     const refPlanet = useRef(null);
 
@@ -14,7 +15,7 @@ export const Planet = ({title, selectedMoons}) => {
             >
                 <Circle selectedMoons={selectedMoons} planetWidth={planetWidth} planetHeight={planetHeight}/>
                 <div>{title}</div>
-                <div className="count">{selectedMoons.length || ''}</div>
+                <div className='count'>{selectedMoons.length || ''}</div>
             </div>
         </>
     )

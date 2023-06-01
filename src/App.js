@@ -1,9 +1,8 @@
-import './App.css';
-import {Systems} from "./components/systems/Systems";
+import {SystemList} from './components/systemList/SystemList';
 
 function App() {
     return (
-        <Systems/>
+        <SystemList/>
     )
 }
 

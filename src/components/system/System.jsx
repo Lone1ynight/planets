@@ -1,7 +1,7 @@
-import React, {useState} from "react";
-import {Planet} from "../planet/Planet";
-import {Moon} from "../moon/Moon";
-import './index.css'
+import React, {useState} from 'react';
+import {Planet} from '../planet/Planet';
+import './index.css';
+import {MoonList} from "../moonList/MoonList";
 
 export const System = ({system}) => {
     const [selectedMoons, setSelectedMoons] = useState([]);
@@ -17,16 +17,9 @@ export const System = ({system}) => {
     }
 
     return (
-        <div className="system">
+        <div className='system'>
             <Planet title={system.planet.title} selectedMoons={selectedMoons}/>
-            {system.moons.map(moon =>
-                <Moon
-                    key={moon.id}
-                    moon={moon}
-                    onClickMoon={onClickMoon}
-                    selectedMoons={selectedMoons}
-                />
-            )}
+            <MoonList moons={system.moons} onClickMoon={onClickMoon} selectedMoons={selectedMoons}/>
         </div>
     )
 }
