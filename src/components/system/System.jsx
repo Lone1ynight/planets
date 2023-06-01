@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Planet} from '../planet/Planet';
-import './index.css';
 import {MoonList} from "../moonList/MoonList";
+import './index.css';
 
 export const System = ({system}) => {
     const [selectedMoons, setSelectedMoons] = useState([]);
